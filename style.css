@@ -10,7 +10,11 @@ body {
 }
 
 #container {
-    display: flex; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
 }
 
 .cartao {
@@ -45,16 +49,20 @@ body {
     margin-top: 1rem;
     padding: 2rem;
     margin-top: 4rem;
+    font-size: 1.4vw;
 }
 
 .cartao__conteudo__pergunta p {
+    backface-visibility: hidden;
     color: var(--text-color);
     font-weight: 500;
+    backface-visibility: hidden;
 }
 
 .cartao__conteudo__resposta p {
     color: var(--card-back-color);
     font-weight: 700;
+    backface-visibility: hidden;
 }
 
 .cartao:hover .cartao__conteudo {
@@ -67,6 +75,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .cartao__conteudo__resposta {
@@ -94,6 +103,7 @@ footer {
 }
 
 footer p {
+    backface-visibility: hidden;
     text-align: center;
     font-size: 0.6rem;
     margin-top: 0.5rem;
